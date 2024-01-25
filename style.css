@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+   
+    height: 100vh;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1.5fr 1.5fr 1.5fr;
+    border: 1px solid black;
+    gap: 10px;
+    padding: 20px;
+    grid-template-areas: 
+        "child1 child2 child2 child3"
+        "child1 child4 child5 child6"
+        "child1 child7 child8 child6";
+}
+
+.child1, .child2, .child3, .child4, .child5, .child6, .child7, .child8 {
+    border: 1px solid black;
+    transition: transform 0.3s ease; 
+    transform: scale(1); 
+}
+
+.child1:hover, .child2:hover, .child3:hover, .child4:hover, .child5:hover, .child6:hover, .child7:hover, .child8:hover {
+    transform: scale(1.1);
+}
+
+
+.child1 {
+    background-image: url(http://www.pixelstalk.net/wp-content/uploads/2016/08/Lamborghini-mountain-fog-sports-car-photos.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: child1;
+   
+}
+
+.child2 {
+    grid-area: child2;
+    background-image: url(https://i1.wp.com/www.stugon.com/wp-content/uploads/2013/12/Exotic-Car-Wallpapers-HD-Edition-stugon.com-10.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.child3 {
+    grid-area: child3;
+    background-image: url(https://digitalsynopsis.com/wp-content/uploads/2014/06/supercar-wallpapers-lamborghini-4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.child4 {
+    grid-area: child4;
+    background-image: url(http://3.bp.blogspot.com/-PqKxj_ZcGNk/TwCYcg6PC8I/AAAAAAAAAHM/Z1HKkbz3RP8/s1600/Cool+cars+wallpapers+2011.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.child5 {
+    grid-area: child5;
+    background-image: url(https://tse4.mm.bing.net/th?id=OIP.54VrCtQbGhj-YoFPB6-qtgHaEo&pid=Api&P=0&h=220);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.child6 {
+    grid-area: child6;
+    background-image: url(http://www.hdcarwallpapers.com/walls/latest_bugatti_veyron_car-wide.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.child7 {
+    grid-area: child7;
+    background-image: url(https://tse2.mm.bing.net/th?id=OIP.M5y_9YnaJms-JKs5M8KfhAHaFj&pid=Api&P=0&h=220);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.child8 {
+    grid-area: child8;
+    background-image: url(http://1.bp.blogspot.com/-hUGH2bRhzCI/T3KfxG7GhdI/AAAAAAAAA6s/ZtAkuc2z1GM/s1600/hd-car-wallpapers.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
